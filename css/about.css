@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f5f3eb; 
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background: linear-gradient(90deg, #378a8a, #549696);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #f0c75e; 
+    transform: translateY(-2px);
+}
+
+.hero-about {
+    height: 60vh;
+    background-image: url('../images/car_about.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-about::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-about h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-about p {
+    font-size: 1.5rem;
+}
+
+.company-story {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.company-story h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.company-story p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.mission-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #e6e2d9; 
+}
+
+.mission, .values {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.mission h3, .values h3 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.values ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.team-vision {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-vision h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-vision p {
+    font-size: 1.2rem;
+    color: #555;
+}
