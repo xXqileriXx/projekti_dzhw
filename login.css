@@ -1,0 +1,157 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background-color: #007bff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page layout */
+body {
+    background-color: #f4f6f8;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Form box */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Text & link */
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 480px) {
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        margin: 0;
+        font-size: 14px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    nav a:first-child {
+        border-top: none;
+    }
+
+    .container {
+        margin-top: 25px;
+        padding: 0 15px;
+    }
+
+}
+
+
+/* ========================= */
+/* 📱➡️💻 TABLET */
+/* ========================= */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    nav {
+        padding: 12px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 15px;
+    }
+}
+
+
+/* ========================= */
+/* 💻 DESKTOP */
+/* ========================= */
+@media (min-width: 769px) {
+
+    nav a {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+}
+
